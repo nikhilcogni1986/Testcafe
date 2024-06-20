@@ -5,8 +5,8 @@ fixture('Right click Test')
 
 test('Right click test', async t =>
 {
-    await t.rightClick(Selector("#rightClickBtn"))
-     .expect(Selector("#rightClickMessage").exists).ok;
+    t.rightClick(Selector("#rightClickBtn"))
+        .expect(Selector("#rightClickMessage").exists).ok;
 
     console.log(await Selector("#rightClickMessage").textContent);
 });
