@@ -1,0 +1,14 @@
+{
+  "name": "testcafeframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkboxesTest1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Rao",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^3.6.1"
+  }
+}
