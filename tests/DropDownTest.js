@@ -30,7 +30,7 @@ test("Select a color from the drop down", async t =>
 {
     await t.navigateTo("https://testautomationpractice.blogspot.com/").maximizeWindow();
     const colorSelect = Selector("#colors");
-    const colorOptions = colorSelect.find('option');j
+    const colorOptions = colorSelect.find('option');
 
     await t.click(colorSelect)
            .click(colorOptions.withText("White"));

@@ -1,7 +1,8 @@
 import { Selector, fixture, test } from "testcafe";
 
 fixture("Double click test")
-    .page("https://demoqa.com/buttons");
+    .page("https://demoqa.com/buttons")
+    .skipJsErrors();
 
 test('Double Click Test', async t =>
 {
