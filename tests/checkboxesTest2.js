@@ -6,6 +6,7 @@ fixture("Checkbox operations")
 test("Multiple checkboxes operation", async t =>
 {
     await t
+        .maximizeWindow()
         .click("#checkBoxOption1")
         .click("#checkBoxOption2")
         .click("#checkBoxOption3");

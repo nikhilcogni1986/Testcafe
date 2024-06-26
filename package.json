@@ -4,7 +4,10 @@
   "description": "",
   "main": "checkboxesTest1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:chrome:parallel": "testcafe -c 2 chrome ./tests -s takeOnFails=true"
   },
   "author": "Nikhil Rao",
   "license": "ISC",

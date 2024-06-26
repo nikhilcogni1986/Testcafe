@@ -5,6 +5,7 @@ fixture('Getting Started')
 
 test('My first test', async t => {
     await t
+        .maximizeWindow()
         .typeText('#developer-name', 'John Smith')
         .click('#submit-button')
         .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');

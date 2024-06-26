@@ -5,7 +5,9 @@ fixture('Text Operations')
 
 test('Text Operations', async t =>
 {
-    await t.typeText('#username',"student");
+    await t
+        .maximizeWindow()
+        .typeText('#username',"student");
     await t.typeText("#password","Password123");
     await t.click("#submit");
 

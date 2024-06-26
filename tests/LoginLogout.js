@@ -6,14 +6,15 @@ fixture("Logout Test")
 test("Login and Logout scenario", async t=>{
 
     await t
-        .navigateTo("https://practicetestautomation.com/practice-test-login/")
-        .maximizeWindow();
+        .navigateTo("https://practicetestautomation.com/practice-test-login/");
 
     await t
+            .maximizeWindow()
             .typeText("#username","student")
             .typeText("#password","Password123")
             .click("#submit");
     
-    await t.expect(await Selector("h1.post-title").innerText).eql("Logged In Successfully");
+    let loggedHeaderText = await Selector("h1.post-title").innerText; 
+    await t.expect(loggedHeaderText).eql("Logged In Successfully");
 
 });

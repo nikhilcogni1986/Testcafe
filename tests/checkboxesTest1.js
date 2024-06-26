@@ -5,8 +5,8 @@ fixture("Checkbox operations")
 
 test("Checkbox operations", async t =>
 {
-    await t.navigateTo("https://rahulshettyacademy.com/AutomationPractice/");
     await t
+        .maximizeWindow()
         .click("#checkBoxOption1")
         .expect(Selector("#checkBoxOption1").checked).ok;
 });
@@ -14,6 +14,7 @@ test("Checkbox operations", async t =>
 test("Multiple checkboxes operation", async t =>
 {
     await t
+        .maximizeWindow()
         .click("#checkBoxOption1")
         .click("#checkBoxOption2")
         .click("#checkBoxOption3")

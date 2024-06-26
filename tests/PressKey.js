@@ -9,7 +9,7 @@ test("Use of PressKey function", async t =>
     await t
             .click(selectBasedOnText)
             .pressKey('Space');
-    t.expect(Selector("#slider").visible).notOk;
+    t.expect(await Selector("#slider").visible).notOk;
 });
 
 test('Use of tab key', async t =>
