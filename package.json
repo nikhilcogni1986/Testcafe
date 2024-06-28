@@ -6,8 +6,10 @@
   "scripts": {
     "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
+    "test:chrome:parallel:headless": "testcafe -c 2 chrome:headless ./tests -s takeOnFails=true",
     "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
-    "test:chrome:parallel": "testcafe -c 2 chrome ./tests -s takeOnFails=true"
+    "test:chrome:parallel": "testcafe -c 2 chrome ./tests -s takeOnFails=true",
+    "test:multiple:browser:execution": "testcafe chrome,firefox ./tests"
   },
   "author": "Nikhil Rao",
   "license": "ISC",
