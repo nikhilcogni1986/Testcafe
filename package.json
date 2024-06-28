@@ -6,12 +6,8 @@
   "scripts": {
     "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
-<<<<<<< HEAD
     "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
     "test:chrome:parallel": "testcafe -c 2 chrome ./tests -s takeOnFails=true"
-=======
-    "test:firefox": "testcafe firefox ./tests -s takeOnFails=true"
->>>>>>> a0fcc36494a92f1bb54a368d415b954941441166
   },
   "author": "Nikhil Rao",
   "license": "ISC",
