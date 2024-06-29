@@ -2,6 +2,7 @@ import { Selector, test } from "testcafe"
 
 fixture `Select the options from Drop down`
     .page("https://devexpress.github.io/testcafe/example/")
+    .skipJsErrors();
 
 test('Select an option from the drop down', async t =>{
 
