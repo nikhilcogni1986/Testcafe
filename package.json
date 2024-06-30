@@ -4,12 +4,14 @@
   "description": "",
   "main": "checkboxesTest1.js",
   "scripts": {
-    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
+    "test:chrome": "testcafe chrome ./tests --reporter json -s takeOnFails=true",
     "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
     "test:chrome:parallel:headless": "testcafe -c 2 chrome:headless ./tests -s takeOnFails=true",
     "test:firefox": "testcafe firefox ./tests -s takeOnFails=true",
+    "test:firefox:headless": "testcafe firefox:headless ./tests -s takeOnFails=true",
     "test:chrome:parallel": "testcafe -c 2 chrome ./tests -s takeOnFails=true",
-    "test:multiple:browser:execution": "testcafe chrome,firefox ./tests"
+    "test:multiple:browser:execution": "testcafe chrome,firefox ./tests",
+    "start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "author": "Nikhil Rao",
   "license": "ISC",
