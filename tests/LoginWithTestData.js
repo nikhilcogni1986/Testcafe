@@ -18,4 +18,4 @@ dataSet.forEach(data =>
         await t.click("button i");
         t.expect(Selector("div#flash").innerText, data.expectedResult);    
     });
-})
+});
