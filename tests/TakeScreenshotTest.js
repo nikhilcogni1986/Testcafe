@@ -18,5 +18,4 @@ test('Take the screenshot of web element', async t =>{
 
     await t.click(Selector("#isAgeSelected"));
     await t.takeElementScreenshot(Selector("#isAgeSelected"), "screenshots/checkbox2.png");
-
 });
